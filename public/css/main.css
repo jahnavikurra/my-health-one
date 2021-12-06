@@ -1,0 +1,48 @@
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  padding: 100px 200px; }
+  .home-container .drink-segment {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    border: 1px dashed lightgrey;
+    padding: 50px; }
+  .home-container .bill-segment {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 50px; }
+    .home-container .bill-segment .pay-segment {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto; }
+    .home-container .bill-segment #report {
+      text-align: left;
+      padding: 0 20px; }
+  .home-container input {
+    padding: 20px 30px; }
+  .home-container .button {
+    margin: 20px;
+    padding: 30px 40px;
+    width: 200px;
+    color: #fff;
+    text-shadow: none;
+    background-image: none;
+    cursor: pointer;
+    display: inline-block;
+    outline: 0;
+    border: none;
+    vertical-align: baseline;
+    background: #e0e1e2 none;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    line-height: 1em;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.28571429rem; }
+    .home-container .button:hover {
+      background: #d1d3d4 none; }

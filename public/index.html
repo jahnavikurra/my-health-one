@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="scripts/semantic-ui-css/semantic.min.css">
+  <link rel="stylesheet" href="scripts/semantic-ui-calendar/dist/calendar.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>My Health One</title>
+</head>
+<body>
+  
+    <script id="home-template" type="text/x-handlebars-template">
+      <div class="home-container">
+          <form class="drink-segment">
+              
+                <div id="coke" class="button">Coca Cola</div>
+
+                <div id="diet" class="button">Diet Coke</div>
+
+                <div id="dp" class="button">Dr. Pepper</div>
+
+                <div id="sprite" class="button">Sprite</div>
+
+                <div id="fanta" class="button">Fanta</div>
+              
+                <div id="ginger" class="button">Ginger Ale</div>
+
+          </form>
+
+        <div class="bill-segment">
+          <div id="result-segment" class="ui center aligned segment">
+            <div class="pay-segment">
+              <input type="number" max="100" class="form-control mb-2" id="insert-coin" placeholder="Enter coin">
+              <input type="number" class="form-control ml-4" id="return-coin" disabled placeholder="Return coin">
+            </div>
+
+            <h2 id="result" class="ui header">
+              Enter coin & select your drink
+            </h2>
+          </div>
+          <br>
+          <div id="report-segment" class="ui center aligned segment">
+            <h2 id="stock" class="ui header">
+            Inventory Report
+            </h2>
+            <div id="report"></div>
+          </div>
+        </div>
+    </div>
+  </script>
+
+
+    <!-- Error Template -->
+    <script id="error-template" type="text/x-handlebars-template">
+      <div class="ui {{color}} inverted segment" style="height:250px;">
+        <br>
+        <h2 class="ui center aligned icon header">
+          <i class="exclamation triangle icon"></i>
+          <div class="content">
+            {{title}}
+            <div class="sub header">{{message}}</div>
+          </div>
+        </h2>
+      </div>
+    </script>
+
+    
+
+    <!-- Page content -->
+    <div id="app"></div>
+
+    <!-- Scripts -->
+    <script src="scripts/jquery/dist/jquery.min.js"></script>
+    <script src="scripts/semantic-ui-css/semantic.min.js"></script>
+    <script src="scripts/semantic-ui-calendar/dist/calendar.min.js"></script>
+    <script src="scripts/axios/dist/axios.min.js"></script>
+    <script src="scripts/handlebars/dist/handlebars.min.js"></script>
+    <script src="scripts/vanilla-router/dist/vanilla-router.min.js"></script>
+    <script src="js/app.js"></script>
+  </div>
+</body>
+</html>

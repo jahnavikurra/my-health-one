@@ -1,0 +1,36 @@
+{
+  "name": "my-health-one",
+  "version": "1.0.0",
+  "description": "My Health One Programming Exercise",
+  "main": "server.js",
+  "watch": {
+    "run_android": {
+      "patterns": [
+        "app"
+      ],
+      "extensions": "ts,html,scss",
+      "quiet": false
+    }
+  },
+  "scripts": {
+    "watch-css": "node-sass -w scss -o public/css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node-sass --include-path scss scss/main.scss  public/css/main.css; node server.js & node-sass -w scss -o public/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "handlebars": "^4.0.11",
+    "jquery": "^3.3.1",
+    "semantic-ui-calendar": "0.0.8",
+    "semantic-ui-css": "^2.3.1",
+    "vanilla-router": "^1.2.6",
+    "node-sass": "^6.0.1",
+    "scss-watch": "^1.0.1"
+  }
+}
