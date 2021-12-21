@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  padding: 100px 200px; }
+  padding: 100px 200px;
+  width: 800px; }
   .home-container .drink-segment {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -37,7 +38,7 @@
     vertical-align: baseline;
     background: #e0e1e2 none;
     color: rgba(0, 0, 0, 0.6);
-    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
     font-weight: 700;
     line-height: 1em;
     font-style: normal;
@@ -46,3 +47,27 @@
     border-radius: 0.28571429rem; }
     .home-container .button:hover {
       background: #d1d3d4 none; }
+  @media screen and (max-width: 425px) {
+    .home-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      width: 100%;
+      padding: 0; }
+      .home-container h2.ui.header {
+        font-size: 15px; }
+      .home-container .button {
+        margin: 10px;
+        padding: 10px;
+        width: 100px; }
+      .home-container .drink-segment {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto; }
+      .home-container .bill-segment .pay-segment {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto; }
+      .home-container .bill-segment #report {
+        font-size: 12px;
+        padding: 0; } }

@@ -4,8 +4,7 @@
   grid-template-rows: auto;
   padding: 100px 200px;
   width: 800px;
-  
-  
+
   .drink-segment {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -49,8 +48,8 @@
     border: none;
     vertical-align: baseline;
     background: #e0e1e2 none;
-    color: rgba(0,0,0,.6);
-    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
     font-weight: 700;
     line-height: 1em;
     font-style: normal;
@@ -64,7 +63,6 @@
   }
 
   @media screen and (max-width: 425px) {
-
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -88,7 +86,6 @@
     }
 
     .bill-segment {
-      
       .pay-segment {
         display: grid;
         grid-template-columns: 1fr;
@@ -102,7 +99,3 @@
     }
   }
 }
-
-
-
- 
