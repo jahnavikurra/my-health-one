@@ -16,6 +16,7 @@ The main libraries used here are:
 2. Run `npm install`
 3. Start server with `npm start` or `node server`
 4. Visit [http://localhost:3000/](http://localhost:3000/).
+5. To check the responsiveness of the mobile application use inspect mode and the click on the mobile and tab icon.
 
 
 
