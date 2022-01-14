@@ -14,8 +14,8 @@ The main libraries used here are:
 
 1. Clone repository
 2. Run `npm install`
-3. Start server with `npm start` or `node server`
-4. Visit [http://localhost:3000/](http://localhost:3000/).
+3. Start server with `npm start` or `node server`.
+4. Visit (http://localhost:3000/home).
 5. To check the responsiveness of the mobile application use inspect mode and the click on the mobile and tab icon.
 
 Steps to follow for getting a drink:
